@@ -6,7 +6,7 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 11:02:58 by gbohm             #+#    #+#             */
-/*   Updated: 2023/01/17 14:09:29 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/01/17 14:18:41 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,7 @@ char	*cut(char **str)
 		return (free_all(1, str));
 	while (i-- > length)
 		leftover[i - length] = (*str)[i];
-	if (ft_calloc2(length + 1, sizeof(char),(void **)  &cut))
+	if (ft_calloc2(length + 1, sizeof(char), (void **) &cut))
 		return (free_all(2, str, &leftover));
 	while (length--)
 		cut[length] = (*str)[length];
