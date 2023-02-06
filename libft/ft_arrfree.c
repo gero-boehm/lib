@@ -6,7 +6,7 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/06 21:08:06 by gbohm             #+#    #+#             */
-/*   Updated: 2023/02/06 21:12:50 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/02/06 21:21:30 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_arrfree(void **arr)
 {
 	void	**cursor;
 
+	if (arr == NULL)
+		return ;
 	cursor = arr;
 	while (*cursor != NULL)
 		free(*cursor++);
