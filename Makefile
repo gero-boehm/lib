@@ -21,7 +21,7 @@ fclean: clean
 
 re: fclean all
 
-compile: main.o lib.a | all
+compile: $(OBJ) main.o
 	$(CC) $(CFLAGS) $^
 
 test: compile

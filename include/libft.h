@@ -6,7 +6,7 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 13:13:50 by gbohm             #+#    #+#             */
-/*   Updated: 2023/02/07 16:43:04 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/02/08 20:48:50 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,5 +77,8 @@ int		ft_strdup2(const char *str, char **dup);
 int		ft_substr2(char const *s, unsigned int start, size_t len, char **sub);
 int		ft_strtrim2(const char *str, const char *set, char **trim);
 int		ft_strjoin2(char **dst, const char *src);
+int		ft_charrepl(char *str, char find, char repl);
+char	*ft_strrepl(char *str, char *find, char *repl);
+int		ft_strrepl2(char **str, char *find, char *repl);
 
 #endif
