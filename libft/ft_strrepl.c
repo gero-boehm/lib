@@ -6,11 +6,10 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/08 18:57:11 by gbohm             #+#    #+#             */
-/*   Updated: 2023/02/08 20:48:52 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/02/08 20:50:28 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 static int	get_count(char *str, char *find, size_t len)
@@ -23,7 +22,6 @@ static int	get_count(char *str, char *find, size_t len)
 	while (1)
 	{
 		tmp = ft_strnstr(tmp, find, len);
-		// printf("%s '%s' %lu\n", tmp, find, len);
 		if (tmp == NULL)
 			break ;
 		tmp++;
