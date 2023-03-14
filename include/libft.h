@@ -6,7 +6,7 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 13:13:50 by gbohm             #+#    #+#             */
-/*   Updated: 2023/02/08 20:48:50 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/03/13 14:45:44 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,13 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }	t_list;
+
+typedef struct s_array {
+	void			*elements;
+	size_t			size;
+	size_t			max_size;
+	unsigned int	bytes;
+}	t_array;
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
@@ -80,5 +87,9 @@ int		ft_strjoin2(char **dst, const char *src);
 int		ft_charrepl(char *str, char find, char repl);
 char	*ft_strrepl(char *str, char *find, char *repl);
 int		ft_strrepl2(char **str, char *find, char *repl);
+
+int		add_element(t_array *arr, void *element);
+void	*get_element_at(t_array *arr, unsigned int index);
+int		create_array(t_array *arr, unsigned int bytes);
 
 #endif
