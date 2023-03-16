@@ -6,7 +6,7 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 12:31:09 by gbohm             #+#    #+#             */
-/*   Updated: 2023/03/16 13:28:25 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/03/16 16:02:37 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,6 +87,7 @@ int		substitute(t_tag *tag, t_buffer *buffer);
 // src.ft_printf
 int		ft_printf(const char *format, ...);
 int		ft_sprintf(char **res, const char *format, ...);
+int		ft_fdprintf(int fd, const char *format, ...);
 
 // utils.buffer
 int		init_buffer(const char *format, t_buffer *buffer);
