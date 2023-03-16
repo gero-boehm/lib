@@ -6,7 +6,7 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 12:52:13 by gbohm             #+#    #+#             */
-/*   Updated: 2023/03/14 14:15:27 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/03/16 16:01:33 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,4 +64,21 @@ int	ft_sprintf(char **res, const char *format, ...)
 	va_end(args);
 	*res = buffer.str;
 	return (buffer.size);
+}
+
+int	ft_fdprintf(int fd, const char *format, ...)
+{
+	va_list		args;
+	t_buffer	buffer;
+	size_t		printed;
+
+	va_start(args, format);
+	if (init_buffer(format, &buffer))
+		return (-1);
+	if (run(args, &buffer))
+		return (free_buffer(&buffer), -1);
+	va_end(args);
+	printed = write(fd, buffer.str, buffer.size);
+	free_buffer(&buffer);
+	return (printed);
 }
