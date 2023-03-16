@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   malloc.c                                           :+:      :+:    :+:   */
+/*   ft_iswhitespace.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/01 10:45:24 by gbohm             #+#    #+#             */
-/*   Updated: 2022/12/01 10:45:36 by gbohm            ###   ########.fr       */
+/*   Created: 2023/03/16 13:29:09 by gbohm             #+#    #+#             */
+/*   Updated: 2023/03/16 13:29:19 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-int	malloc2(size_t count, char **str)
+int	is_whitespace(char c)
 {
-	*str = malloc(count);
-	return (*str == NULL);
+	return (c == ' ' || c == '\t' || c == '\r'
+		|| c == '\n' || c == '\v' || c == '\f');
 }

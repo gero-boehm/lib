@@ -6,7 +6,7 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 10:35:22 by gbohm             #+#    #+#             */
-/*   Updated: 2022/12/01 13:20:39 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/03/16 13:25:01 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int	padstr2(int padding, int right, int zeroes, t_result *result)
 		return (0);
 	if (right)
 		offset = 0;
-	if (malloc2(padding + 1, &new))
+	if (ft_malloc2(padding + 1, (void **) &new))
 		return (1);
 	new[padding] = 0;
 	c = ' ';
@@ -70,7 +70,7 @@ int	strsub(t_tag *tag, t_buffer *buffer)
 	if (tag->range.start > buffer->size)
 		return (1);
 	total_length = buffer->size - tag->range.length + tag->result.size;
-	if (malloc2(total_length + 1, &str))
+	if (ft_malloc2(total_length + 1, (void **) &str))
 		return (2);
 	str[total_length] = 0;
 	range_end = tag->range.start + tag->range.length;

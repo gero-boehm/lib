@@ -6,7 +6,7 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/25 10:13:42 by gbohm             #+#    #+#             */
-/*   Updated: 2023/03/12 21:39:50 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/03/16 13:24:17 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	itoa_base2(unsigned long value, char *base, char **str)
 {
 	int		depth;
 
-	if (malloc2(21, str))
+	if (ft_malloc2(21, (void **) str))
 		return (1);
 	depth = recurse_setup(value, base, *str);
 	(*str)[depth] = 0;

@@ -6,7 +6,7 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 12:31:09 by gbohm             #+#    #+#             */
-/*   Updated: 2023/03/14 16:03:09 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/03/16 13:28:25 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -121,8 +121,6 @@ int		has_zeroes_flag(t_tag *tag);
 // utils.flags2
 int		has_padding(t_tag *tag);
 int		has_precision(t_tag *tag);
-// utils.malloc
-int		malloc2(size_t count, char **str);
 // utils.math
 int		min(int a, int b);
 int		max(int a, int b);
