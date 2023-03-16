@@ -5,6 +5,10 @@ SRC=$(wildcard libft/*.c) $(wildcard get_next_line/*.c) $(wildcard ft_printf/*)
 OBJ=$(SRC:.c=.o)
 HEADERS=$(wildcard include/*.c)
 
+ifdef DEBUG
+	CFLAGS += -g
+endif
+
 all: $(NAME)
 
 %.o: %.c $(HEADERS) Makefile
