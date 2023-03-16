@@ -6,13 +6,13 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/16 13:29:09 by gbohm             #+#    #+#             */
-/*   Updated: 2023/03/16 13:29:19 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/03/16 13:57:37 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	is_whitespace(char c)
+int	ft_iswhitespace(char c)
 {
 	return (c == ' ' || c == '\t' || c == '\r'
 		|| c == '\n' || c == '\v' || c == '\f');
