@@ -6,7 +6,7 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 13:13:50 by gbohm             #+#    #+#             */
-/*   Updated: 2023/03/16 13:28:51 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/03/16 13:44:52 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ typedef struct s_array {
 }	t_array;
 
 int		ft_atoi(const char *str);
+int		ft_atol(const char *str);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t count, size_t size);
 int		ft_isalnum(int c);
