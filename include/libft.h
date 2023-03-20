@@ -6,7 +6,7 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 13:13:50 by gbohm             #+#    #+#             */
-/*   Updated: 2023/03/16 13:54:41 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/03/20 12:58:32 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,6 +92,7 @@ int		ft_strrepl2(char **str, char *find, char *repl);
 int		add_element(t_array *arr, void *element);
 void	*get_element_at(t_array *arr, unsigned int index);
 int		create_array(t_array *arr, unsigned int bytes);
+void	free_array(t_array *arr);
 
 int		ft_iswhitespace(char c);
 #endif

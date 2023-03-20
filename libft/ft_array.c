@@ -6,7 +6,7 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 14:38:26 by gbohm             #+#    #+#             */
-/*   Updated: 2023/03/13 14:44:57 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/03/20 12:56:00 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,4 +51,12 @@ int	create_array(t_array *arr, unsigned int bytes)
 	arr->max_size = 1;
 	arr->bytes = bytes;
 	return (0);
+}
+
+void	free_array(t_array *arr)
+{
+	free(arr->elements);
+	arr->size = 0;
+	arr->max_size = 0;
+	arr->bytes = 0;
 }
