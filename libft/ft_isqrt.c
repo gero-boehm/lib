@@ -6,7 +6,7 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/22 20:24:21 by gbohm             #+#    #+#             */
-/*   Updated: 2023/03/22 20:31:49 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/03/22 20:33:51 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ unsigned int	ft_isqrt(unsigned int num)
 {
 	unsigned int	i;
 
+	if (num == 0)
+		return (0);
 	if (num < 4)
 		return (1);
 	i = 2;
