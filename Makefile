@@ -1,5 +1,5 @@
 CC=cc
-CFLAGS=-Wall -Wextra -Werror -I include
+CFLAGS=-Wall -Wextra -Werror -I include -I internal
 NAME=lib.a
 SRC=$(wildcard libft/*.c) $(wildcard get_next_line/*.c) $(wildcard ft_printf/*)
 OBJ=$(SRC:.c=.o)

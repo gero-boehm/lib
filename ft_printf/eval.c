@@ -6,11 +6,11 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/25 10:13:42 by gbohm             #+#    #+#             */
-/*   Updated: 2023/03/16 13:24:17 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/04/16 11:00:46 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "ft_printf_internal.h"
 #include "libft.h"
 
 static int	recurse_base(unsigned long value, char *base,

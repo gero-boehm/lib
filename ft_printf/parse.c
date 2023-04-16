@@ -6,11 +6,11 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 09:42:32 by gbohm             #+#    #+#             */
-/*   Updated: 2022/12/01 10:16:13 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/04/16 11:00:46 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "ft_printf_internal.h"
 #include "libft.h"
 
 static int	parse_flags(t_tag *tag, t_buffer *buffer)

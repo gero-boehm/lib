@@ -6,12 +6,12 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/24 16:08:12 by gbohm             #+#    #+#             */
-/*   Updated: 2023/03/12 19:42:16 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/04/16 11:00:46 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "ft_printf.h"
+#include "ft_printf_internal.h"
 
 int	advance_cursor(t_buffer *buffer)
 {

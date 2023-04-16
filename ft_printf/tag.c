@@ -6,12 +6,12 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/30 11:22:36 by gbohm             #+#    #+#             */
-/*   Updated: 2022/12/01 13:34:09 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/04/16 11:00:46 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "ft_printf.h"
+#include "ft_printf_internal.h"
 
 void	init_tag(t_tag *tag)
 {

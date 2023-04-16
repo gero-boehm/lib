@@ -6,32 +6,13 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 10:25:38 by gbohm             #+#    #+#             */
-/*   Updated: 2023/01/17 14:15:16 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/04/16 11:00:17 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
-#include "get_next_line.h"
-
-// int	get_fd(int fd, t_list *links, t_list **link)
-// {
-// 	t_list	*new;
-
-// 	while (1)
-// 	{
-// 		if (links->fd == fd)
-// 		{
-// 			*link = links;
-// 			return (0);
-// 		}
-// 		if (links->next == NULL)
-// 			break ;
-// 		links = links->next;
-// 	}
-// 	if (ft_calloc2(1, sizeof(t_list), (void **) &new))
-// 		return (1);
-// }
+#include "get_next_line_internal.h"
 
 char	*get_next_line(int fd)
 {

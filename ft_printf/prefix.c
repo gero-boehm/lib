@@ -6,11 +6,11 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/26 16:12:11 by gbohm             #+#    #+#             */
-/*   Updated: 2022/11/26 16:23:36 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/04/16 11:00:46 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "ft_printf_internal.h"
 
 int	get_str_for_prefix2(t_prefix prefix, char **str)
 {
