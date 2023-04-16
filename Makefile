@@ -3,7 +3,7 @@ CFLAGS=-Wall -Wextra -Werror -I include -I internal
 NAME=lib.a
 SRC=$(wildcard libft/*.c) $(wildcard get_next_line/*.c) $(wildcard ft_printf/*)
 OBJ=$(SRC:.c=.o)
-HEADERS=$(wildcard include/*.c)
+HEADERS=$(wildcard include/*.h) $(wildcard internal/*.h)
 
 ifdef DEBUG
 	CFLAGS += -g
@@ -34,5 +34,8 @@ test: compile
 tclean: clean
 	rm -f a.out
 
+norm:
+	norminette $(SRC) $(HEADERS)
+
 .PHONY:
-	all bonus clean fclean re compile test tclean
+	all bonus clean fclean re compile test tclean norm
