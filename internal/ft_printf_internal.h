@@ -6,7 +6,7 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 12:31:09 by gbohm             #+#    #+#             */
-/*   Updated: 2023/04/16 10:58:20 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/04/16 11:04:02 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,11 +83,6 @@ int		parse_tag(t_buffer *buffer, t_tag *tag);
 int		advance_cursor(t_buffer *buffer);
 int		evaluate(va_list args, t_tag *tag);
 int		substitute(t_tag *tag, t_buffer *buffer);
-
-// src.ft_printf
-int		ft_printf(const char *format, ...);
-int		ft_sprintf(char **res, const char *format, ...);
-int		ft_fdprintf(int fd, const char *format, ...);
 
 // utils.buffer
 int		init_buffer(const char *format, t_buffer *buffer);
