@@ -1,7 +1,7 @@
 CC=cc
 CFLAGS=-Wall -Wextra -Werror -I include -I internal
 NAME=lib.a
-SRC=$(wildcard libft/*.c) $(wildcard get_next_line/*.c) $(wildcard ft_printf/*)
+SRC=$(wildcard libft/*.c) $(wildcard get_next_line/*.c) $(wildcard ft_printf/*.c)
 OBJ=$(SRC:.c=.o)
 HEADERS=$(wildcard include/*.h) $(wildcard internal/*.h)
 
