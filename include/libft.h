@@ -6,7 +6,7 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 13:13:50 by gbohm             #+#    #+#             */
-/*   Updated: 2023/04/14 14:07:50 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/04/19 11:23:49 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,5 +84,8 @@ int				ft_iswhitespace(char c);
 unsigned int	ft_isqrt(unsigned int num);
 void			ft_free2d(void **arr);
 int				ft_streq(char *haystack, char *needle);
+
+char			*ft_chrrep(char c, size_t n);
+int				ft_chrrep2(char c, size_t n, char **str);
 
 #endif

@@ -6,7 +6,7 @@ OBJ=$(SRC:.c=.o)
 HEADERS=$(wildcard include/*.h) $(wildcard internal/*.h)
 
 DRY_RUN:=0
-ifeq (n,$(findstring n,$(firstword -$(MAKEFLAGS))))
+ifeq (n,$(findstring n,$(firstword $(MAKEFLAGS))))
 	DRY_RUN := 1
 endif
 
