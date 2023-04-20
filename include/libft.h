@@ -6,7 +6,7 @@
 /*   By: gbohm <gbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 13:13:50 by gbohm             #+#    #+#             */
-/*   Updated: 2023/04/19 11:23:49 by gbohm            ###   ########.fr       */
+/*   Updated: 2023/04/20 11:23:04 by gbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,8 +59,6 @@ void			ft_putchar_fd(char c, int fd);
 void			ft_putstr_fd(char *s, int fd);
 void			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
-
-void			ft_arrfree(void **arr);
 
 int				ft_malloc2(size_t count, void **p);
 int				ft_calloc2(size_t count, size_t size, void **p);
